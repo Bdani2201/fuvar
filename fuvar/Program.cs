@@ -49,7 +49,10 @@ namespace fuvar
                 sorokszama++;
             }
             int fuvarokszama = sorokszama;
+            
+            //3. 
 
+            Console.WriteLine("3. feladat: {0} fuvar", fuvarokszama);
 
 
             Console.ReadKey();
