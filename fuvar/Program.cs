@@ -98,6 +98,14 @@ namespace fuvar
             Console.WriteLine("5. feladat:");
             for (i = 1; i <= kulonbozoelemekszama; i++)                
                     Console.WriteLine("\t{0}: {1} fuvar ", fizetesimodok[i], fizetesszam[i]);
+            
+            //6. 
+            double osszesmerfold = 0;
+            for (i = 0; i < fuvarokszama; i++)
+            {
+                osszesmerfold += adatok[i].tavolsag;
+            }
+            Console.WriteLine("6. feladat: {0} km",Math.Round(osszesmerfold*1.6,2));
 
             Console.ReadKey();
         }
