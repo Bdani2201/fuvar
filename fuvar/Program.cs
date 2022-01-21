@@ -106,6 +106,22 @@ namespace fuvar
                 osszesmerfold += adatok[i].tavolsag;
             }
             Console.WriteLine("6. feladat: {0} km",Math.Round(osszesmerfold*1.6,2));
+            
+              //7.
+            int maxfuvar = adatok[0].idotartam;
+            int maxi = 0;
+            for (i = 0; i < fuvarokszama; i++)
+            {
+                if (adatok[i].idotartam > maxfuvar)
+                {
+                    maxfuvar = adatok[i].idotartam;
+                    maxi = i;
+                }
+            }
+            Console.WriteLine("7. feladat: Leghosszabb\n\tFuvar hossza: {0} másodperc", adatok[maxi].idotartam);
+            Console.WriteLine("\tTaxi azonosító: {0}", adatok[maxi].taxiid);
+            Console.WriteLine("\tMegtett távolság: {0} km", adatok[maxi].tavolsag * 1.6);
+            Console.WriteLine("\tViteldíj: {0} $", adatok[maxi].viteldij);
 
             Console.ReadKey();
         }
